@@ -32,7 +32,7 @@
               </select>
           </form>
           <ul class='thumbnails'>
-            <li style="height:150px"  class='thumbnail'  ng-repeat="sushi in sushis | filter:query | orderBy:orderProp ">
+            <li style="height:150px"  class='thumbnail' ng-model="filteredSushis"  ng-repeat="sushi in sushis | filter:query | orderBy:orderProp ">
                 <!-- @note @angular filtrer une liste -->
                 <!-- @node @angular ordonner une liste -->
                 <!-- @node @angular utiliser un src par défaut pour une image -->
@@ -48,8 +48,7 @@
         <h5>JSON dump</h5>
         <pre>
             <code>
-                {{ sushis | json }}
-            </code>
+{{ sushis | json }}</code>
         </pre>
     </div>
 </div>
