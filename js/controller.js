@@ -5,10 +5,11 @@ ProductListController = function($scope, $http) {
   $scope.title = "Joly Sushi";
   $http.get('data/data.json').success(function(data) {
     $scope.sushis = data;
-    $scope.totalPrice = function() {};
-    return $scope.sushis.reduce((function(a, b) {
-      return a + b.price;
-    }), 0);
+    return $scope.totalPrice = function() {
+      return $scope.sushis.reduce((function(a, b) {
+        return a + b.price;
+      }), 0);
+    };
   });
   $scope.orderProp = 'price';
 };

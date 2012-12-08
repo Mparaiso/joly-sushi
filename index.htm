@@ -12,6 +12,8 @@
     <script type="text/javascript" src="vendor/angular.js"></script>
     <script type="text/javascript" src='js/index.js'></script>
     <script type="text/javascript" src="js/controller.js"></script>
+    <script type="text/javascript" src='vendor/jquery.min.js'></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body ng-controller="ProductListController">
     <div class="container container-fluid">
@@ -32,10 +34,13 @@
           <ul class='thumbnails'>
             <li style="height:150px"  class='thumbnail'  ng-repeat="sushi in sushis | filter:query | orderBy:orderProp ">
                 <!-- @note @angular filtrer une liste -->
-                <!-- @node @angular ordoner une liste -->
-                <img src='http://placehold.it/200x100' ng-src="img/{{sushi.src}}" alt="sushi"/>
-                {{sushi.type}} {{sushi.name}}
-                <p>{{sushi.price}} €</p>
+                <!-- @node @angular ordonner une liste -->
+                <!-- @node @angular utiliser un src par défaut pour une image -->
+                <a  class="image-tooltip" data-html='{{sushi.name}}' rel='tooltip' href="#"> 
+                    <img  src='http://placehold.it/200x100' ng-src="img/{{sushi.src}}" alt="sushi"/>
+                </a>
+                <div>{{sushi.type}} {{sushi.name}}</div>
+                <div> <strong>{{sushi.price}} €</strong> </div>
             </li>
         </ul>
     </div>
@@ -43,7 +48,7 @@
         <h5>JSON dump</h5>
         <pre>
             <code>
-{{ sushis | json }}
+                {{ sushis | json }}
             </code>
         </pre>
     </div>

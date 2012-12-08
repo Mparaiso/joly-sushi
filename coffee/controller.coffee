@@ -5,7 +5,7 @@ ProductListController = ($scope,$http)->
     $http.get('data/data.json').success((data)->
         $scope.sushis = data
         $scope.totalPrice = ->
-        $scope.sushis.reduce(((a,b)->return a+b.price),0)
+            $scope.sushis.reduce(((a,b)->return a+b.price),0)
     )
 
     $scope.orderProp = 'price'
