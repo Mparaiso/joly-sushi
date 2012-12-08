@@ -14,15 +14,16 @@
     <script type="text/javascript" src="js/controller.js"></script>
 </head>
 <body ng-controller="ProductListController">
-    <div class="container-fluid">
+    <div class="containter container-fluid">
         <div class="row row-fluid">
             <h5>{{sushis.length}} Product(s)</h5>
             <form class='form-inline' action="">
-                <label for="filter">Filter by name</label>
-                <input type="text" name="filter" id="">
+                <label for="filter">Filter by name : </label>
+                <input type='text' ng-model="query" name="filter" >
             </form>
             <ul class='thumbnails'>
-                <li class='span3' ng-repeat="sushi in sushis">
+                <!-- @note @angular filtrer une liste -->
+                <li class='span3' ng-repeat="sushi in sushis | filter:query">
                     <a href='#' class='thumbnail'>
                         <img style="height:80px" src="img/{{sushi.src}}" alt="">
                         <h5>{{sushi.type}} {{sushi.name}}</h5>
