@@ -12,7 +12,15 @@ ProductListController = ($scope,$http)->
 
     return
 
-ProductDetailController = ($scope,$routeParams)->
+ProductDetailController = ($scope,$routeParams,$http)->
     $scope.sushiId = $routeParams["sushiId"]
+    $http.get('data/data.json').success((datas)->
+        for data in datas
+            if data.id is parseInt($scope.sushiId,10)
+                $scope.sushi = data
+                return
+        return
+    )
+    return
 
 ### ProductDetailController.$inject = ['$scope',"$routeParams"] ###

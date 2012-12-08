@@ -14,8 +14,18 @@ ProductListController = function($scope, $http) {
   $scope.orderProp = 'price';
 };
 
-ProductDetailController = function($scope, $routeParams) {
-  return $scope.sushiId = $routeParams["sushiId"];
+ProductDetailController = function($scope, $routeParams, $http) {
+  $scope.sushiId = $routeParams["sushiId"];
+  $http.get('data/data.json').success(function(datas) {
+    var data, _i, _len;
+    for (_i = 0, _len = datas.length; _i < _len; _i++) {
+      data = datas[_i];
+      if (data.id === parseInt($scope.sushiId, 10)) {
+        $scope.sushi = data;
+        return;
+      }
+    }
+  });
 };
 
 /* ProductDetailController.$inject = ['$scope',"$routeParams"]
