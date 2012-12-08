@@ -1,0 +1,110 @@
+[
+    {
+        "src": "avocat.jpg",
+        "name": "avocat",
+        "price": 1,
+        "type": "sushi"
+    },
+    {
+        "src": "concombre.jpg",
+        "name": "concombre",
+        "price": 3,
+        "type": "sushi"
+    },
+    {
+        "src": "crevette.jpg",
+        "name": "crevette",
+        "price": 2,
+        "type": "sushi"
+    },
+    {
+        "src": "jambon_serano.jpg",
+        "name": "jambon serano",
+        "price": 4,
+        "type": "sushi"
+    },
+    {
+        "src": "maquereau.jpg",
+        "name": "maquereau",
+        "price": 3,
+        "type": "sushi"
+    },
+    {
+        "src": "omelette.jpg",
+        "name": "omelette",
+        "price": 4,
+        "type": "sushi"
+    },
+    {
+        "src": "saumon.jpg",
+        "name": "saumon",
+        "price": 2,
+        "type": "sushi"
+    },
+    {
+        "src": "saumon_fumé.jpg",
+        "name": "saumon fumé",
+        "price": 5,
+        "type": "sushi"
+    },
+    {
+        "src": "spicy_crevette.jpg",
+        "name": "spicy crevette",
+        "price": 3,
+        "type": "sushi"
+    },
+    {
+        "src": "thon.jpg",
+        "name": "thon",
+        "price": 4,
+        "type": "sushi"
+    },
+    {
+        "type": "maki",
+        "price": 5,
+        "src": "maki_aubergines.jpg",
+        "name": "aubergines"
+    },
+    {
+        "type": "maki",
+        "price": 3,
+        "src": "maki_concombre.jpg",
+        "name": "concombre"
+    },
+    {
+        "type": "maki",
+        "price": 1,
+        "src": "maki_maquereau.jpg",
+        "name": "maquereau"
+    },
+    {
+        "type": "maki",
+        "price": 2,
+        "src": "maki_radis.jpg",
+        "name": "radis"
+    },
+    {
+        "type": "maki",
+        "price": 2,
+        "src": "maki_saumon.jpg",
+        "name": "saumon"
+    },
+    {
+        "type": "maki",
+        "price": 2,
+        "src": "maki_surimi.jpg",
+        "name": "surimi"
+    },
+    {
+        "type": "maki",
+        "price": 2,
+        "src": "maki_thon.jpg",
+        "name": "thon"
+    },
+    {
+        "type": "maki",
+        "price": 4,
+        "src": "maki_thon_cuit.jpg",
+        "name": "thon_cuit"
+    }
+]
