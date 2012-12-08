@@ -11,3 +11,8 @@ ProductListController = ($scope,$http)->
     $scope.orderProp = 'price'
 
     return
+
+ProductDetailController = ($scope,$routeParams)->
+    $scope.sushiId = $routeParams["sushiId"]
+
+### ProductDetailController.$inject = ['$scope',"$routeParams"] ###

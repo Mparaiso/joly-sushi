@@ -1,56 +1,23 @@
 <!DOCTYPE HTML>
-<html lang="en-US" ng-app>
+<html lang="en-US" ng-app="sushi">
 <!-- 
     @node @angular
     The ng-app attribute is represents an Angular directive (named ngApp; Angular uses name-with-dashes for attribute names and camelCase for the corresponding directive name) used to flag an element which Angular should consider to be the root element of our application. This gives application developers the freedom to tell Angular if the entire html page or only a portion of it should be treated as the Angular application
 -->
 <head>
     <meta charset="UTF-8">
-    <title>Phone-cat</title>
+    <title>Joly Sushi</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-responsive.min.css">
     <script type="text/javascript" src="vendor/angular.js"></script>
-    <script type="text/javascript" src='js/index.js'></script>
+    <script type="text/javascript" src='js/app.js'></script>
     <script type="text/javascript" src="js/controller.js"></script>
-    <script type="text/javascript" src='vendor/jquery.min.js'></script>
-    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body ng-controller="ProductListController">
+<body>
     <div class="container container-fluid">
-        <div class="row-fluid">
-            <h1>{{title}}</h1>
-            <h4>{{sushis.length}} Product(s) : filtered by {{query}},ordered by {{orderProp}}</h4>
-            <p>Total price {{ totalPrice()  }}</p>
-            <form class='form-inline' action="">
-                <label for="filter">Filter by name : </label>
-                <input type='text' ng-model="query" name="filter" >
-                <label for="order-by">Order by : </label>
-                <select name='order-by' ng-model="orderProp">
-                  <option value="name">Alphabetical</option>
-                  <option value="price">Cheapest</option>
-                  <option value="type">Type</option>
-              </select>
-          </form>
-          <ul class='thumbnails'>
-            <li style="height:150px"  class='thumbnail' ng-model="filteredSushis"  ng-repeat="sushi in sushis | filter:query | orderBy:orderProp ">
-                <!-- @note @angular filtrer une liste -->
-                <!-- @node @angular ordonner une liste -->
-                <!-- @node @angular utiliser un src par défaut pour une image -->
-                <a  class="image-tooltip" data-html='{{sushi.name}}' rel='tooltip' href="#"> 
-                    <img  src='http://placehold.it/200x100' ng-src="img/{{sushi.src}}" alt="sushi"/>
-                </a>
-                <div>{{sushi.type}} {{sushi.name}}</div>
-                <div> <strong>{{sushi.price}} €</strong> </div>
-            </li>
-        </ul>
+        <!--@note @angular creer une vue -->
+        <div class="row-fluid" ng-view>
+        </div>
     </div>
-    <div class="row-fluid">
-        <h5>JSON dump</h5>
-        <pre>
-            <code>
-{{ sushis | json }}</code>
-        </pre>
-    </div>
-</div>
 </body>
 </html>
