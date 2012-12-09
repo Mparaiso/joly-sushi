@@ -1,6 +1,6 @@
-  <h1>{{title}}</h1>
   <h4>{{sushis.length}} Product(s) : filtered by {{query}},ordered by {{orderProp}}</h4>
-  <p>Total price {{ totalPrice()  }}</p>
+  <!-- <p>Total price {{ totalPrice()  }} €</p> -->
+  <p>Total price {{ sushis | filter:query | totalprice  }} €</p>
   <form class='form-inline' action="">
     <label for="filter">Filter by name : </label>
     <input type='text' ng-model="query" name="filter" >

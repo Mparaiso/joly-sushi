@@ -1,7 +1,7 @@
 ###
  App module
 ###
-angular.module('sushi',[]).config(['$routeProvider',($routeProvider)->
+angular.module('sushi',['sushiFilters']).config(['$routeProvider',($routeProvider)->
         $routeProvider
         .when("/sushi",{
             templateUrl:'templates/partials/sushi-list.html',
