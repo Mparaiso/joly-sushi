@@ -1,4 +1,4 @@
-  <h4>{{sushis.length}} Product(s) : filtered by {{query}},ordered by {{orderProp}}</h4>
+  <h6><small>{{sushis.length}} Product(s) : filtered by {{query}},ordered by {{orderProp}}</small></h6>
   <!-- <p>Total price {{ totalPrice()  }} €</p> -->
   <!-- <p>Total price {{ sushis | filter:query | totalprice  }} €</p> -->
   <form class='form-inline' action="">
@@ -21,6 +21,6 @@
       </a>
       <div data-id={{sushi.id}}>{{sushi.type}} {{sushi.name}}</div>
       <div> <strong>{{sushi.price}} €</strong> </div>
-      <a ng-click="addToCard(sushi.id)" href='#'><i class='icon-shopping-cart'></i></a>
+      <a ng-click="addToCard(sushi.id)" href='javascript:void 0'><i class='icon-shopping-cart'></i></a>
     </li>
   </ul>

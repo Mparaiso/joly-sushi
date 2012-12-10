@@ -1,4 +1,12 @@
-.sushi{
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+html,body{
+    /*font-family: 'OPen Sans', sans-serif !important;*/
+}
+.serif{
+    font-family: serif;
+    font-style: italic;
+}
+
+input.quantity{
+    margin:0 !important;
+    padding: 0 !important;
 }
