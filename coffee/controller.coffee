@@ -86,7 +86,7 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
 
     _addToCard=(productId)->
         if $rootScope.card[productId]
-            $rootScope.card[productId].quantity +=1
+            $rootScope.card[productId].quantity  = parseInt($rootScope.card[productId].quantity,10)+1
         else
             $rootScope.card[productId] = {
                 quantity:1,
