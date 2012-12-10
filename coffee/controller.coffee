@@ -87,6 +87,15 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
             return a
         ),{})
 
+    $rootScope.deleteFromCard = (sushiId)->
+        for nameProp,item of $rootScope.card
+            if item.sushi.id == sushiId
+                delete $rootScope.card[nameProp]
+                $rootScope.alert.message = "Article #{$rootScope.getFullNameById(sushiId)} removed from card"
+                $rootScope.alert.show = true
+
+
+
     $rootScope.addToCard = (sushiId)->
         ### EN : Add an article to the card ###
         ### FR : ajouter un article à la carte ###

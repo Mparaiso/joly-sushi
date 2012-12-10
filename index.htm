@@ -55,10 +55,13 @@
               <th>Price</th>
               <th>Quantity</th>
             </tr>
-            <tr ng-repeat='cardItem in card'>
-              <td><small>{{getFullName(cardItem.sushi)}}</small></td>
-              <td><small>{{cardItem.sushi.price}} €</small> </td>
-              <td><small><input type="text" class='span1 quantity' ng-model="cardItem.quantity"> </small></td>
+            <tr ng-repeat='item in card'>
+              <td><small>{{getFullName(item.sushi)}}</small></td>
+              <td><small>{{item.sushi.price}} €</small> </td>
+              <td>
+                <small><input type="text" class='span1 quantity' ng-model="item.quantity"> </small>
+                <a ng-click="deleteFromCard(item.sushi.id)" href=""> <i class="icon-remove"></i></a> 
+              </td>
             </tr>
             <tr>
               <td>Total</td>

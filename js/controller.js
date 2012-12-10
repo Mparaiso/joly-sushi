@@ -106,6 +106,22 @@ ProductCardController = function($scope, $rootScope, $routeParams, $http) {
       return a;
     }), {});
   };
+  $rootScope.deleteFromCard = function(sushiId) {
+    var item, nameProp, _ref, _results;
+    _ref = $rootScope.card;
+    _results = [];
+    for (nameProp in _ref) {
+      item = _ref[nameProp];
+      if (item.sushi.id === sushiId) {
+        delete $rootScope.card[nameProp];
+        $rootScope.alert.message = "Article " + ($rootScope.getFullNameById(sushiId)) + " removed from card";
+        _results.push($rootScope.alert.show = true);
+      } else {
+        _results.push(void 0);
+      }
+    }
+    return _results;
+  };
   $rootScope.addToCard = function(sushiId) {
     /* EN : Add an article to the card
     */
