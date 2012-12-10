@@ -44,7 +44,7 @@ ProductCardController = function($scope, $rootScope, $routeParams, $http) {
       EN : initialize sushis model
   */
 
-  var getCard;
+  var _addToCard, _removeFromCard;
   $http.get('data/data.json').success(function(data) {
     return $rootScope.sushis = data;
   });
@@ -53,11 +53,6 @@ ProductCardController = function($scope, $rootScope, $routeParams, $http) {
   */
 
   $rootScope.card = {};
-  /* 
-      EN : helper to calculate quantity for each article , hold article ids
-  */
-
-  $rootScope.cardIdList = [];
   /*
           EN : alert object model to display messages
   */
@@ -89,38 +84,44 @@ ProductCardController = function($scope, $rootScope, $routeParams, $http) {
       }
     }
   };
-  getCard = function() {
-    /*
-                EN : get current card 
-                FR : obtenir la carte courante
-    */
-    return $rootScope.cardIdList.reduce((function(a, b) {
-      if (b in a) {
-        a[b].quantity += 1;
-      } else {
-        a[b] = {
-          quantity: 1,
-          sushi: $rootScope.getSushiById(b)
-        };
-      }
-      return a;
-    }), {});
-  };
   $rootScope.deleteFromCard = function(sushiId) {
-    var item, nameProp, _ref, _results;
-    _ref = $rootScope.card;
-    _results = [];
-    for (nameProp in _ref) {
-      item = _ref[nameProp];
-      if (item.sushi.id === sushiId) {
-        delete $rootScope.card[nameProp];
-        $rootScope.alert.message = "Article " + ($rootScope.getFullNameById(sushiId)) + " removed from card";
-        _results.push($rootScope.alert.show = true);
-      } else {
-        _results.push(void 0);
-      }
+    /* 
+        EN : delete items by article id 
+        We cannot delete directly items from $rootScope.card ,
+        instead , we need to delete all sushiId in $rootScope.cardIdList
+        then reconstruct the $rootScope.card object
+    */
+
+    var removed;
+    removed = false;
+    removed = _removeFromCard(sushiId);
+    if (removed) {
+      $rootScope.alert.type = "block";
+      $rootScope.alert.message = "Article " + ($rootScope.getFullNameById(sushiId)) + " removed from card";
+      $rootScope.alert.show = true;
     }
-    return _results;
+  };
+  _addToCard = function(productId) {
+    if ($rootScope.card[productId]) {
+      $rootScope.card[productId].quantity += 1;
+    } else {
+      $rootScope.card[productId] = {
+        quantity: 1,
+        sushi: $rootScope.getSushiById(productId)
+      };
+    }
+  };
+  _removeFromCard = function(productId) {
+    /* EN : delete product from card
+    */
+
+    var copy;
+    copy = false;
+    if ($rootScope.card[productId]) {
+      copy = JSON.parse(JSON.stringify($rootScope.card[productId]));
+      delete $rootScope.card[productId];
+    }
+    return copy;
   };
   $rootScope.addToCard = function(sushiId) {
     /* EN : Add an article to the card
@@ -128,13 +129,13 @@ ProductCardController = function($scope, $rootScope, $routeParams, $http) {
 
     /* FR : ajouter un article à la carte
     */
-    $rootScope.cardIdList.push(sushiId);
+    _addToCard(sushiId);
     /* 
         EN : recompute  the card 
         FR : recalculer la carte
     */
 
-    $rootScope.card = getCard();
+    $rootScope.alert.type = "success";
     $rootScope.alert.message = "Article  " + ($rootScope.getFullNameById(sushiId)) + " added to your card";
     return $rootScope.alert.show = true;
   };

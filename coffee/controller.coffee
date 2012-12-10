@@ -42,11 +42,6 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
     ###
     $rootScope.card = {}
 
-    ### 
-        EN : helper to calculate quantity for each article , hold article ids
-    ###
-    $rootScope.cardIdList = []
-
     ###
         EN : alert object model to display messages
     ###
@@ -74,37 +69,49 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
         return
 
 
-    getCard = ->
-        ###
-            EN : get current card 
-            FR : obtenir la carte courante 
-        ###
-        return $rootScope.cardIdList.reduce(((a,b)->
-            if b of a
-                a[b].quantity +=1
-            else
-                a[b] = {quantity:1,sushi:$rootScope.getSushiById(b)}
-            return a
-        ),{})
-
     $rootScope.deleteFromCard = (sushiId)->
-        for nameProp,item of $rootScope.card
-            if item.sushi.id == sushiId
-                delete $rootScope.card[nameProp]
-                $rootScope.alert.message = "Article #{$rootScope.getFullNameById(sushiId)} removed from card"
-                $rootScope.alert.show = true
+        ### 
+            EN : delete items by article id 
+            We cannot delete directly items from $rootScope.card ,
+            instead , we need to delete all sushiId in $rootScope.cardIdList
+            then reconstruct the $rootScope.card object
+        ###
+        removed = false
+        removed = _removeFromCard(sushiId)
+        if removed
+            $rootScope.alert.type= "block"
+            $rootScope.alert.message = "Article #{$rootScope.getFullNameById(sushiId)} removed from card"
+            $rootScope.alert.show = true
+        return
 
+    _addToCard=(productId)->
+        if $rootScope.card[productId]
+            $rootScope.card[productId].quantity +=1
+        else
+            $rootScope.card[productId] = {
+                quantity:1,
+                sushi:$rootScope.getSushiById(productId)
+            }
+        return
+
+    _removeFromCard=(productId)->
+        ### EN : delete product from card ###
+        copy = false
+        if $rootScope.card[productId]
+            copy = JSON.parse(JSON.stringify($rootScope.card[productId]))
+            delete $rootScope.card[productId]
+        return copy
 
 
     $rootScope.addToCard = (sushiId)->
         ### EN : Add an article to the card ###
         ### FR : ajouter un article à la carte ###
-        $rootScope.cardIdList.push(sushiId)
+        _addToCard(sushiId)
         ### 
             EN : recompute  the card 
             FR : recalculer la carte 
         ###
-        $rootScope.card = getCard()
+        $rootScope.alert.type= "success"
         $rootScope.alert.message = "Article  #{$rootScope.getFullNameById(sushiId)} added to your card"
         $rootScope.alert.show= true
 
