@@ -1,6 +1,6 @@
   <h4>{{sushis.length}} Product(s) : filtered by {{query}},ordered by {{orderProp}}</h4>
   <!-- <p>Total price {{ totalPrice()  }} €</p> -->
-  <p>Total price {{ sushis | filter:query | totalprice  }} €</p>
+  <!-- <p>Total price {{ sushis | filter:query | totalprice  }} €</p> -->
   <form class='form-inline' action="">
     <label for="filter">Filter by name : </label>
     <input type='text' ng-model="query" name="filter" >
@@ -12,14 +12,15 @@
     </select>
   </form>
   <ul class='thumbnails'>
-    <li style="height:150px"  class='thumbnail' ng-model="filteredSushis"  ng-repeat="sushi in sushis | filter:query | orderBy:orderProp ">
+    <li style="height:150px"  class='sushi thumbnail' ng-model="filteredSushis"  ng-repeat="sushi in sushis | filter:query | orderBy:orderProp ">
       <!-- @note @angular filtrer une liste -->
       <!-- @node @angular ordonner une liste -->
       <!-- @node @angular utiliser un src par défaut pour une image -->
-      <a  class="image-tooltip" data-html='{{sushi.name}}' rel='tooltip' href="#sushi/{{sushi.id}}"> 
+      <a  class="image-tooltip" data-html='{{sushi.name}}' rel='tooltip' href="#sushi/{{sushi.id}}">
         <img  src='http://placehold.it/200x100' ng-src="img/{{sushi.src}}" alt="sushi"/>
       </a>
-      <div>{{sushi.type}} {{sushi.name}}</div>
+      <div data-id={{sushi.id}}>{{sushi.type}} {{sushi.name}}</div>
       <div> <strong>{{sushi.price}} €</strong> </div>
+      <a ng-click="addToCard(sushi.id)" href='#'><i class='icon-shopping-cart'></i></a>
     </li>
   </ul>

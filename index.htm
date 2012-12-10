@@ -1,27 +1,56 @@
 <!DOCTYPE HTML>
 <html lang="en-US" ng-app="sushi">
-<!-- 
-    @node @angular
-    The ng-app attribute is represents an Angular directive (named ngApp; Angular uses name-with-dashes for attribute names and camelCase for the corresponding directive name) used to flag an element which Angular should consider to be the root element of our application. This gives application developers the freedom to tell Angular if the entire html page or only a portion of it should be treated as the Angular application
+  <!-- 
+  @node @angular
+  The ng-app attribute is represents an Angular directive (named ngApp; Angular uses name-with-dashes for attribute names and camelCase for the corresponding directive name) used to flag an element which Angular should consider to be the root element of our application. This gives application developers the freedom to tell Angular if the entire html page or only a portion of it should be treated as the Angular application
 -->
 <head>
-    <meta charset="UTF-8">
-    <title>Joly Sushi</title>
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-responsive.min.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/1.2.4/es5-shim.min.js "></script>
-    <script type="text/javascript" src="vendor/angular.js"></script>
-    <script type="text/javascript" src="js/filters.js"></script>
-    <script type="text/javascript" src='js/app.js'></script>
-    <script type="text/javascript" src="js/controller.js"></script>
+  <meta charset="UTF-8">
+  <title>Joly Sushi</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-responsive.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/1.2.4/es5-shim.min.js "></script>
+  <script type="text/javascript" src="vendor/angular.js"></script>
+  <script type="text/javascript" src="js/filters.js"></script>
+  <script type="text/javascript" src='js/app.js'></script>
+  <script type="text/javascript" src="js/controller.js"></script>
 </head>
 <body>
-    <div class="container container-fluid">
-          <h1>Joly Sushi</h1>
-          <h3>Delicious sushis shiped worldwide.</h3>
-        <!--@note @angular creer une vue -->
-        <div class="row-fluid" ng-view>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>Joly Sushi</h1>
+        <h6>design by M.Paraiso</h6>
+        <h6><small>An angularjs showcase app</small></h6>
+        <h3>Delicious sushis shiped worldwide.</h3>
+      </div>
     </div>
+    <!--@note @angular creer une vue -->
+    <div  class="row" ng-controller="ProductCardController">
+      <span class='span9' ng-view>
+      </span>
+      <span class="span3">
+        <h5>Card</h5>
+        <table class='table'>
+          <tr>
+            <th>Article</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+          <tr ng-repeat='cardItem in card'>
+            <td><small>{{getFullName(cardItem.sushi)}}</small></td>
+            <td><small>{{cardItem.sushi.price}} €</small> </td>
+            <td><small><input type="text" class='span1' ng-model="cardItem.quantity"> </small></td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>{{ getTotalPrice() }} €</td>
+          </tr>
+        </table>
+      </span>
+    </div>
+    <div class='row'></div>
+  </div>
 </body>
 </html>
