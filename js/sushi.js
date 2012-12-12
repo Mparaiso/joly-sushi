@@ -2,7 +2,7 @@
 /* ProductDetailController.$inject = ['$scope',"$routeParams"]
 */
 
-var ProductCardController, ProductDetailController, ProductListController, sushi,
+var ProductCardController, ProductDetailController, ProductListController, ProductTypeController, blop, sushi,
   __hasProp = {}.hasOwnProperty;
 
 ProductCardController = function($scope, $rootScope, $routeParams, $http) {
@@ -162,6 +162,15 @@ ProductListController = function($scope, $rootScope, $http, $filter) {
   $rootScope.title = "Joly Sushi";
   $scope.orderProp = 'price';
 };
+
+ProductTypeController = function($scope, $http) {
+  return $http.get("data/types.json").success(function(data) {
+    debugger;    console.log(data);
+    return $scope.types = data;
+  });
+};
+
+blop = 5;
 
 /*
     créer un filter personalisé

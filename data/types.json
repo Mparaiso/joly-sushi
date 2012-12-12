@@ -1,0 +1,39 @@
+[
+    {
+        "id": 0,
+        "name": "sushi"
+    },
+    {
+        "id": 1,
+        "name": "maki"
+    },
+    {
+        "id": 2,
+        "name": "drinks"
+    },
+    {
+        "id": 3,
+        "name": "alcohol",
+        "parentId":2
+    },
+    {
+        "id":4,
+        "name":"soft drinks",
+        "parentId":2
+
+    },
+    {
+        "id": 4,
+        "name": "desert"
+    },
+    {
+        "id": 5,
+        "name":"ice cream",
+        "parentId": 4
+    },
+    {
+        "id":6,
+        "name":"cakes",
+        "parentId":4
+    }
+]

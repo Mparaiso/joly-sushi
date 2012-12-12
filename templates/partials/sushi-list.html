@@ -1,26 +1,31 @@
-  <h6><small>{{sushis.length}} Product(s) : filtered by {{query}},ordered by {{orderProp}}</small></h6>
-  <!-- <p>Total price {{ totalPrice()  }} €</p> -->
-  <!-- <p>Total price {{ sushis | filter:query | totalprice  }} €</p> -->
-  <form class='form-inline' action="">
-    <label for="filter">Filter by name : </label>
-    <input type='text' ng-model="query" name="filter" >
-    <label for="order-by">Order by : </label>
-    <select name='order-by' ng-model="orderProp">
-      <option value="name">Alphabetical</option>
-      <option value="price">Cheapest</option>
-      <option value="type">Type</option>
-    </select>
-  </form>
-  <ul class='thumbnails'>
-    <li style="height:150px"  class='sushi thumbnail flash' ng-model="filteredSushis"  ng-repeat="sushi in sushis | filter:query | orderBy:orderProp " >
-      <!-- @note @angular filtrer une liste -->
-      <!-- @node @angular ordonner une liste -->
-      <!-- @node @angular utiliser un src par défaut pour une image -->
-      <a  class="image-tooltip" data-html='{{sushi.name}}' rel='tooltip' href="#sushi/{{sushi.id}}">
-        <img  src='http://placehold.it/200x100' ng-src="img/{{sushi.src}}" alt="sushi"/>
-      </a>
-      <div data-id={{sushi.id}}>{{sushi.type}} {{sushi.name}}</div>
-      <div> <strong>{{sushi.price}} €</strong> </div>
-      <a ng-click="addToCard(sushi.id)" href='javascript:void 0'><i class='icon-shopping-cart'></i></a>
-    </li>
-  </ul>
+  <span class='flash'>
+    <!-- <h6><small>{{sushis.length}} Product(s) : filtered by {{query}},ordered by {{orderProp}}</small></h6> 
+    <p>Total price {{ totalPrice()  }} €</p> 
+    <p>Total price {{ sushis | filter:query | totalprice  }} €</p> -->
+    <form class='form-inline' action="">
+      <label for="filter">Filter by name : </label>
+      <input type='text' ng-model="query" name="filter" >
+      <label for="order-by">Order by : </label>
+      <select name='order-by' ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="price">Cheapest</option>
+        <!-- <option value="type">Type</option> -->
+      </select>
+    </form>
+    <div class="selector" ng-controller="ProductTypeController">
+      <span ng-repeat='type in types'>{{type.name}}</span>
+    </div>
+    <ul class='thumbnails'>
+      <li style="height:150px"  class='sushi thumbnail flash' ng-model="filteredSushis"  ng-repeat="sushi in sushis | filter:query | filter:type | orderBy:orderProp " >
+        <!-- @note @angular filtrer une liste -->
+        <!-- @node @angular ordonner une liste -->
+        <!-- @node @angular utiliser un src par défaut pour une image -->
+        <a  class="image-tooltip" data-html='{{sushi.name}}' rel='tooltip' href="#sushi/{{sushi.id}}">
+          <img  src='http://placehold.it/200x100' ng-src="img/{{sushi.src}}" alt="sushi"/>
+        </a>
+        <div data-id={{sushi.id}}>{{sushi.type}} {{sushi.name}}</div>
+        <div> <strong>{{sushi.price}} €</strong> </div>
+        <a ng-click="addToCard(sushi.id)" href='javascript:void 0'><i class='icon-shopping-cart'></i></a>
+      </li>
+    </ul>
+  </span>

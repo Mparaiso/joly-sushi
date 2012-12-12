@@ -1,0 +1,27 @@
+<div id='info-bar' ng-show='alert.show' class="flash">
+  <div class='alert alert-{{alert.type}}'>
+    <a class="close" data-dismiss="alert" href='javascript:void 0;' ng-click="hideAlert()">&times;</a>
+    <div class="flash" >{{alert.message}}</div>
+</div>
+</div>
+<h5>Card</h5>
+<table class='table animate'>
+  <tr>
+    <th>Article</th>
+    <th>Price</th>
+    <th>Quantity</th>
+</tr>
+<tr ng-repeat='item in card' class='flash'>
+    <td><small>{{getFullName(item.sushi)}}</small></td>
+    <td><small>{{item.sushi.price}} €</small> </td>
+    <td>
+      <small><input type="text" class='span1 quantity' ng-model="item.quantity"> </small>
+      <a ng-click="deleteFromCard(item.sushi.id)" href=""> <i class="icon-remove"></i></a> 
+  </td>
+</tr>
+<tr>
+    <td>Total</td>
+    <td></td>
+    <td>{{ getTotalPrice() }} €</td>
+</tr>
+</table>
