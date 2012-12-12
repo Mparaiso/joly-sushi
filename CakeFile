@@ -16,6 +16,3 @@ compileCallback = (error,stdout,stderr)->
         console.log('script compiled',stdout,stderr)
     else 
         console.log(error)
-
-
-

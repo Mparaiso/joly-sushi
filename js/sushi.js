@@ -2,8 +2,9 @@
 /* ProductDetailController.$inject = ['$scope',"$routeParams"]
 */
 
-var ProductCardController, ProductDetailController, ProductListController, ProductTypeController, blop, sushi,
-  __hasProp = {}.hasOwnProperty;
+var ProductCardController, ProductDetailController, ProductListController, ProductTypeController, SushiFilters, sushi,
+  __hasProp = {}.hasOwnProperty,
+  __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
 ProductCardController = function($scope, $rootScope, $routeParams, $http) {
   /*
@@ -159,25 +160,66 @@ ProductListController = function($scope, $rootScope, $http, $filter) {
       EN : manage product list display 
       FR : gère l'affichage de la liste de produits
   */
+
+  var getSelectedTypes;
   $rootScope.title = "Joly Sushi";
   $scope.orderProp = 'price';
+  $rootScope.types = [];
+  getSelectedTypes = function() {
+    return $rootScope.types.filter(function(type) {
+      return type.selected === true;
+    }).map(function(type) {
+      return type.name;
+    });
+  };
+  $scope.inSelectedTypes = function(item) {
+    var _ref;
+    if (getSelectedTypes().length <= 0) {
+      return true;
+    } else {
+      if ((_ref = item.type, __indexOf.call(getSelectedTypes(), _ref) >= 0)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  };
 };
 
-ProductTypeController = function($scope, $http) {
-  return $http.get("data/types.json").success(function(data) {
-    debugger;    console.log(data);
-    return $scope.types = data;
+ProductTypeController = function($scope, $rootScope, $http) {
+  $http.get("data/types.json").success(function(data) {
+    return $rootScope.types = data;
   });
-};
+  $scope.getSelectedClass = function(predicate) {
+    if (predicate === true) {
+      return "label-info";
+    } else {
 
-blop = 5;
+    }
+  };
+  $scope.clearSelected = function() {
+    $rootScope.types.forEach(function(type) {
+      return type.selected = false;
+    });
+  };
+  return $scope.addToSelectedTypes = function(typeId) {
+    var id, type;
+    id = parseInt(typeId, 10);
+    type = $rootScope.types.filter(function(type) {
+      return type.id === typeId;
+    })[0];
+    type.selected = type.selected ? false : true;
+  };
+};
 
 /*
     créer un filter personalisé
 */
 
 
-angular.module("SushiFilters", []).filter('totalprice', function() {
+SushiFilters = angular.module("SushiFilters", []);
+
+SushiFilters.filter('totalprice', function() {
   return function(sushis) {
     if (sushis == null) {
       sushis = [
@@ -189,6 +231,14 @@ angular.module("SushiFilters", []).filter('totalprice', function() {
     return sushis.reduce((function(a, b) {
       return a + b.price;
     }), 0);
+  };
+});
+
+SushiFilters.filter('capitalize', function() {
+  return function(word) {
+    return word.split(" ").map(function(word) {
+      return word[0].toUpperCase() + word.substr(1);
+    }).join(" ");
   };
 });
 

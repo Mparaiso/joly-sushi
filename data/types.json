@@ -1,39 +1,30 @@
 [
     {
-        "id": 0,
-        "name": "sushi"
+        "id":0,
+        "name":"menus"
     },
     {
         "id": 1,
-        "name": "maki"
+        "name": "sushi"
     },
     {
         "id": 2,
-        "name": "drinks"
+        "name": "maki"
     },
     {
         "id": 3,
-        "name": "alcohol",
-        "parentId":2
+        "name": "alcohol"
     },
     {
         "id":4,
-        "name":"soft drinks",
-        "parentId":2
-
-    },
-    {
-        "id": 4,
-        "name": "desert"
+        "name":"soft drinks"
     },
     {
         "id": 5,
-        "name":"ice cream",
-        "parentId": 4
+        "name":"ice cream"
     },
     {
         "id":6,
-        "name":"cakes",
-        "parentId":4
+        "name":"cakes"
     }
 ]
