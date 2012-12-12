@@ -10,6 +10,6 @@ Delicious Sushis Shiped Worldwide
 
 Contact mparaiso@online.fr
 
-### Live Demo : [Joly Sushi](http://mparaiso.github.com/joly-sushi/#/sushi)
+### Live Demo : [Joly Sushi](http://joly-sushi.herokuapp.com/#/sushi)
 
 License : MIT
