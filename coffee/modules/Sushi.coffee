@@ -2,7 +2,7 @@
  App module
 ###
 
-sushi = angular.module('Sushi',['SushiFilters'])
+sushi = angular.module('sushi',['SushiFilters'])
 
 
 sushi.config(['$routeProvider',($routeProvider)->
