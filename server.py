@@ -3,6 +3,9 @@ import os
 import BaseHTTPServer
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 
+"""
+    Simple script for heroku , in order to server some static pages
+"""
 
 HandlerClass = SimpleHTTPRequestHandler
 ServerClass = BaseHTTPServer.HTTPServer
