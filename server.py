@@ -1,11 +1,12 @@
 import sys
+import os
 import BaseHTTPServer
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 
 
 HandlerClass = SimpleHTTPRequestHandler
-ServerClass  = BaseHTTPServer.HTTPServer
-Protocol     = "HTTP/1.0"
+ServerClass = BaseHTTPServer.HTTPServer
+Protocol = "HTTP/1.0"
 
 if sys.argv[1:]:
     port = int(sys.argv[1])
