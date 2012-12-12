@@ -1,0 +1,9 @@
+child_proc = require("child_process")
+
+# compile les scripts 
+task("compile","compile scripts in coffee directory to js/sushi.js",(options)->
+    child_proc.exec("coffee -o js -j sushi.js -cb coffee",{},(error,stdOut,stdError)->
+        console.log('script compiled')
+    )
+)
+

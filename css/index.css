@@ -1,6 +1,3 @@
-html,body{
-    /*font-family: 'OPen Sans', sans-serif !important;*/
-}
 .serif{
     font-family: serif;
     font-style: italic;
@@ -11,7 +8,18 @@ input.quantity{
     padding: 0 !important;
 }
 
-.ui-animate {
-  opacity: 0;
-  max-height: 0;
+@-webkit-keyframes flashin{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
+.flash{
+    -webkit-animation-duration: 0.5s ;
+    -webkit-animation-name: flashin ;
+}
+

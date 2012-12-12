@@ -2,9 +2,8 @@
  App module
 ###
 
-sushi = angular.module('sushi',['sushiFilters','ui'])
+sushi = angular.module('Sushi',['SushiFilters'])
 
-sushi.value('ui.config',{})
 
 sushi.config(['$routeProvider',($routeProvider)->
     $routeProvider
@@ -22,3 +21,10 @@ sushi.config(['$routeProvider',($routeProvider)->
     })
     return
 ])
+
+###
+    @note @angular déclarer un controller dans 
+    la définition du module
+###
+# sushi.controller "ProductCardController",($rootScope,$scope,$routeParams,$http)-> #definition du controller
+    

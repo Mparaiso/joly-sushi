@@ -1,26 +1,4 @@
-###
-    coffee/controller.coffee
-###
-ProductListController = ($scope,$rootScope,$http,$filter)->
-    ### 
-        EN : manage product list display 
-        FR : gère l'affichage de la liste de produits 
-    ###
-    $rootScope.title = "Joly Sushi"
-    $scope.orderProp = 'price'
-    return
 
-ProductDetailController = ($rootScope,$scope,$routeParams,$http)->
-    ### 
-        EN : manage detailed product view display
-        FR : gère l'affichage de vue de détail 
-    ###
-    $scope.sushiId = $routeParams["sushiId"]
-    ### 
-        EN : holds current sushi model
-    ###
-    $scope.sushi = $rootScope.sushis.filter((data)->data.id==parseInt($scope.sushiId,10))[0]
-    return
 
 ### ProductDetailController.$inject = ['$scope',"$routeParams"] ###
 
@@ -30,7 +8,7 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
         FR : gère la commande du client
     ###
 
-    ### 
+    ###
         EN : initialize sushis model
     ###
     $http.get('data/data.json').success((data)->
@@ -52,7 +30,7 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
     }
 
     $rootScope.hideAlert = ()->
-        ### 
+        ###
             EN : hide alert
             FR : fermer le popup d'alerte
         ###
@@ -60,7 +38,7 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
         return
 
     $rootScope.getSushiById = (id)->
-        ### 
+        ###
             EN : get sushi object by id
             FR : obtenir un sushi par son id 
         ###
@@ -70,7 +48,7 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
 
 
     $rootScope.deleteFromCard = (sushiId)->
-        ### 
+        ###
             EN : delete items by article id 
             We cannot delete directly items from $rootScope.card ,
             instead , we need to delete all sushiId in $rootScope.cardIdList
@@ -107,7 +85,7 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
         ### EN : Add an article to the card ###
         ### FR : ajouter un article à la carte ###
         _addToCard(sushiId)
-        ### 
+        ###
             EN : recompute  the card 
             FR : recalculer la carte 
         ###
@@ -116,7 +94,7 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
         $rootScope.alert.show= true
 
     $rootScope.getFullNameById=(id)->
-        ### 
+        ###
             EN : get sushi type + name by sushi's id
         ###
         return $rootScope.getFullName($rootScope.getSushiById(id))
@@ -128,7 +106,7 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
         return "#{sushi.type} #{sushi.name}"
 
     $scope.getTotalPrice = ->
-        ### 
+        ###
             EN : get total amount of the current card 
         ###
         total = 0
