@@ -9,6 +9,12 @@ task("compile:watch","compile scripts in coffee directory to js/sushi.js and wat
     handle = child_proc.exec("coffee -o js -j sushi.js -cbw coffee",{},compileCallback)
     handle.stdout.setEncoding("utf-8")
     handle.stdout.on("data",->console.log("out: ",[].join.call(arguments,",")))
+    return
+)
+
+task("runserver","run a local server ",(options)->
+    app=runServer()
+    return
 )
 
 compileCallback = (error,stdout,stderr)->
@@ -16,3 +22,11 @@ compileCallback = (error,stdout,stderr)->
         console.log('script compiled',stdout,stderr)
     else 
         console.log(error)
+
+runServer = ->
+    connect =  require('connect')
+    app = connect()
+    app.use(connect.static(__dirname+"/"))
+    app.listen(3000)
+    console.log 'Listening or 3000'
+    return app

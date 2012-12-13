@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-US" ng-app="sushi">
+<head>
+  <meta charset="UTF-8">
+  <title>Joly Sushi</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-responsive.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/1.2.4/es5-shim.min.js "></script>
+  <script type="text/javascript" src="vendor/angular.js"></script>
+  <script type="text/javascript" src="js/sushi.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <noscript>
+        <div class="span12">
+          <h1 class="alert alert-error">Please enable Javascript to use this site.</h1>
+      </div>
+  </noscript>
+  <div class="span12" ng-include="'templates/partials/sushi-header.html'"></div>
+</div>
+<div  class="row" ng-controller="ProductCardController">
+        <!-- @note @angular inclure un fichier extern -->
+    <span class="span3 pull-right" ng-include="'templates/partials/sushi-card.html'"></span>
+    <span class='span9' ng-view></span>
+</div>
+<div class='row'><small>&copy; 2012 M.Paraiso</small></div>
+</div>
+</body>
+</html>

@@ -124,5 +124,19 @@
         "price": 4,
         "src": "maki_thon_cuit.jpg",
         "name": "thon cuit"
+    },
+    {
+        "id":19,
+        "type":"soft drinks",
+        "price":2,
+        "src":"coca75cl.jpg",
+        "name":"Coca 75 cl"
+    },
+    {
+        "id":20,
+        "type":"soft drinks",
+        "price":1,
+        "src":"coca33cl.jpg",
+        "name":"Coca 33 cl"
     }
 ]

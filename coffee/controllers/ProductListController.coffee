@@ -4,7 +4,7 @@ ProductListController = ($scope,$rootScope,$http,$filter)->
         FR : gère l'affichage de la liste de produits 
     ###
     $rootScope.title = "Joly Sushi"
-    $scope.orderProp = 'price'
+    $scope.orderProp = 'type'
     $rootScope.types = []
 
     getSelectedTypes = ->

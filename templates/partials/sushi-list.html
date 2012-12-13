@@ -1,26 +1,22 @@
-  <span class='flash'>
-    <!-- <h6><small>{{sushis.length}} Product(s) : filtered by {{query}},ordered by {{orderProp}}</small></h6> 
-    <p>Total price {{ totalPrice()  }} €</p> 
-    <p>Total price {{ sushis | filter:query | totalprice  }} €</p> -->
     <form class='form-inline' action="">
       <label for="filter">Filter by name : </label>
       <input type='text' ng-model="query" name="filter" >
       <label for="order-by">Order by : </label>
-      <select name='order-by' ng-model="orderProp">
+      <select name='order-by' ng-model="orderProp" >
         <option value="name">Alphabetical</option>
         <option value="price">Cheapest</option>
-        <!-- <option value="type">Type</option> -->
+        <option value="type">Type</option>
       </select>
     </form>
     <div  class="selector" ng-controller="ProductTypeController">
       <span ng-repeat='type in types'>
-        <a href='javascript:void 0;' ng-click="addToSelectedTypes(type.id)" class='label' style="font-size: 15px" ng-class="getSelectedClass(type.selected)" >{{type.name | capitalize }}</a>
+        <a href='javascript:void 0;' ng-click="addToSelectedTypes(type.id)" class='label trans' style="font-size: 15px" ng-class="getSelectedClass(type.selected)" >{{type.name | capitalize }}</a>
       </span>&nbsp;
       <span><a ng-click='clearSelected()' href="javascript:void 0;">Clear</a></span>
     </div>
     <hr>
     <ul class='thumbnails'>
-      <li style="height:150px"  class='sushi thumbnail flash' ng-model="filteredSushis"  ng-repeat="sushi in sushis | filter:query | filter:inSelectedTypes | orderBy:orderProp " >
+      <li style="height:150px"  class='sushi thumbnail flash move' ng-model="filteredSushis"  ng-repeat="sushi in sushis | filter:query | filter:inSelectedTypes | orderBy:orderProp " >
         <!-- @note @angular filtrer une liste -->
         <!-- @node @angular ordonner une liste -->
         <!-- @node @angular utiliser un src par défaut pour une image -->
@@ -32,4 +28,3 @@
         <a ng-click="addToCard(sushi.id)" href='javascript:void 0'><i class='icon-shopping-cart'></i></a>
       </li>
     </ul>
-  </span>

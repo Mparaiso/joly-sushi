@@ -23,3 +23,16 @@ input.quantity{
     -webkit-animation-name: flashin ;
 }
 
+.trans{
+    -webkit-transition: all 0.5s ease-in;
+}
+
+
+::-webkit-scrollbar              { background:#F9F9F9; width:10px }
+/*::-webkit-scrollbar-button       { background:#FFF; }*/
+/*::-webkit-scrollbar-track        { background:#AAA; }*/
+::-webkit-scrollbar-track-piece  { /* 4 */ }
+::-webkit-scrollbar-thumb        { background: #CCC; }
+::-webkit-scrollbar-thumb:hover        { background: #BBB; }
+::-webkit-scrollbar-corner       { /* 6 */ }
+::-webkit-resizer                { /* 7 */ }
