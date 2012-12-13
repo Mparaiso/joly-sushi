@@ -1,0 +1,1494 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"webkit-tr",
+				"-webkit-transition:   (property)"
+			],
+			[
+				"roo",
+				"rootScope	\\$rootScope"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"Coo",
+				"coordinates"
+			],
+			[
+				"c",
+				"callback"
+			],
+			[
+				"p",
+				"p3"
+			],
+			[
+				"l",
+				"Library  (class)"
+			],
+			[
+				"sa",
+				"sans-serif"
+			],
+			[
+				"fon-",
+				"font-family"
+			],
+			[
+				"image",
+				"imageData"
+			],
+			[
+				"getC",
+				"getImage  (function)"
+			],
+			[
+				"st",
+				"status"
+			],
+			[
+				"Class",
+				"ClassMetadataFactory  (namespace)"
+			],
+			[
+				"inp",
+				"input_file"
+			],
+			[
+				"ta",
+				"currentTarget  (variable)"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"f",
+				":first-child"
+			],
+			[
+				"tex",
+				"text-indent"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"boo",
+				"bootstrap"
+			],
+			[
+				"ve",
+				"vendor"
+			],
+			[
+				"__",
+				"__prop	__prop"
+			],
+			[
+				"usern",
+				"userNonExpired"
+			],
+			[
+				"my",
+				"myBase"
+			],
+			[
+				"mongo",
+				"mongoDataAccessLayer"
+			],
+			[
+				"co",
+				"confirmDelete"
+			],
+			[
+				"cou",
+				"couchdb"
+			],
+			[
+				"dr",
+				"drawTextOverlay"
+			],
+			[
+				"up",
+				"updateGameState"
+			],
+			[
+				"ch",
+				"checkHits"
+			],
+			[
+				"la",
+				"layouts"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"point",
+				"pointLights"
+			],
+			[
+				"Vir",
+				"VirtualHost"
+			],
+			[
+				"VI",
+				"VIEWPORT_HEIGHT"
+			],
+			[
+				"lao",
+				"layout"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "requirements.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 110.0,
+		"selected_items":
+		[
+			[
+				"fetch",
+				"Fetch: File"
+			],
+			[
+				"pre",
+				"Preview"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"Snippet: ",
+				"Snippet: __mit"
+			],
+			[
+				"mark",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"fet",
+				"Fetch: File"
+			],
+			[
+				"mar",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"makr",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"preview",
+				"Preview"
+			],
+			[
+				"prev",
+				"Preview"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Save-Only Linting"
+			],
+			[
+				"codein",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pytho",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"dja",
+				"Django DocsSearch"
+			],
+			[
+				"stack",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"view",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"fe",
+				"Fetch: Package"
+			],
+			[
+				"md",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"tw",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"ds",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"display",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"coffee",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"mdp",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"markdo",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"doc",
+				"Goto Documentation"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"zen",
+				"Zen Coding: Wrap zen as you type"
+			],
+			[
+				"codei",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"bro",
+				"Preferences: Browse Packages"
+			],
+			[
+				"fetc",
+				"Fetch: Manage remote files"
+			],
+			[
+				"wra",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"fech",
+				"Fetch: Manage remote files"
+			],
+			[
+				"g",
+				"Goto Documentation"
+			],
+			[
+				"",
+				"Fetch: Manage remote files"
+			],
+			[
+				"date",
+				"Snippet: input - date"
+			],
+			[
+				"do",
+				"Goto Documentation"
+			],
+			[
+				"PHPUnit: ",
+				"PHPUnit: Run Using This XML File"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"code",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reid",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"codeintel",
+				"SublimeCodeIntel: Disable Live Autocompletion"
+			],
+			[
+				"intel",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"html",
+				"Tidy HTML"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"PHP Code Sniffer: ",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"Package Control:ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 402.0
+	},
+	"console":
+	{
+		"height": 338.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/projects/categories/angularjs/sushi/CakeFile",
+		"/C/projects/categories/angularjs/sushi/templates/partials/sushi-header.html",
+		"/C/projects/categories/angularjs/sushi/data/data.json",
+		"/C/projects/categories/angularjs/sushi/coffee/controllers/ProductListController.coffee",
+		"/C/projects/categories/angularjs/sushi/coffee/controllers/ProductCardController.coffee",
+		"/C/projects/categories/angularjs/sushi/css/index.css",
+		"/C/projects/categories/angularjs/sushi/index.html",
+		"/C/projects/categories/angularjs/sushi/js/sushi.js",
+		"/C/projects/categories/angularjs/sushi/trash/fireworks.js",
+		"/C/Users/mark prades/Desktop/Sans titre-1.png",
+		"/C/projects/categories/angularjs/sushi/templates/partials/sushi-list.html",
+		"/C/projects/categories/angularjs/sushi/coffee/controllers/ProductTypeController.coffee",
+		"/C/projects/categories/angularjs/sushi/coffee/modules/Sushi.coffee",
+		"/C/projects/categories/angularjs/sushi/coffee/filters/SushiFilters.coffee",
+		"/C/projects/categories/angularjs/sushi/data/types.json",
+		"/C/projects/categories/angularjs/sushi/templates/partials/sushi-card.html",
+		"/C/projects/categories/angularjs/sushi/index.htm",
+		"/C/projects/categories/angularjs/sushi/templates/partials/sushi-detail.html",
+		"/C/projects/categories/angularjs/sushi/COMMIT_EDITMSG.COMMIT_EDITMSG",
+		"/C/projects/categories/angularjs/sushi/README.md",
+		"/C/projects/categories/angularjs/sushi/coffee/module/app.coffee",
+		"/C/projects/categories/angularjs/sushi/coffee/controller/controller.coffee",
+		"/C/projects/categories/angularjs/sushi/coffee/controllers/ProductDetailController.coffee",
+		"/C/projects/categories/angularjs/sushi/coffee/modules/sushi.coffee",
+		"/C/projects/categories/angularjs/sushi/js/controller.js",
+		"/C/projects/categories/angularjs/sushi/coffee/app.coffee",
+		"/C/projects/categories/angularjs/sushi/css/angular-ui.css",
+		"/C/projects/categories/angularjs/sushi/coffee/controller.coffee",
+		"/C/Users/mark prades/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/C/projects/categories/angularjs/sushi/vendor/angular-ui.js",
+		"/C/projects/categories/angularjs/getting-started/index.html",
+		"/C/projects/categories/angularjs/sushi/test/tests.js",
+		"/C/projects/categories/angularjs/sushi/license.txt",
+		"/C/projects/categories/angularjs/sushi/coffee/filters.coffee",
+		"/C/projects/categories/angularjs/getting-started/app.coffee",
+		"/C/projects/categories/angularjs/sushi/js/app.js",
+		"/C/projects/categories/angularjs/sushi/js/filters.js",
+		"/C/projects/categories/angularjs/sushi/coffee/filter.coffee",
+		"/C/Users/mark prades/AppData/Roaming/Sublime Text 2/Packages/CoffeeCompile/CoffeeCompile.sublime-settings",
+		"/C/Users/mark prades/AppData/Roaming/Sublime Text 2/Packages/User/CoffeeCompile.sublime-settings",
+		"/C/projects/categories/angularjs/sushi/vendor/angular.js",
+		"/C/projects/categories/angularjs/sushi/vendor/jquery.min.js",
+		"/C/projects/categories/angularjs/sushi/img/saumon_fumé.jpg",
+		"/C/projects/categories/angularjs/sushi/img/maki_maquereau.jpg",
+		"/C/projects/categories/angularjs/sushi/test/tests.html",
+		"/C/projects/categories/angularjs/phone-cat/coffee/index.coffee",
+		"/C/Users/mark prades/Desktop/sushi/data.json",
+		"/C/projects/categories/angularjs/phone-cat/index.htm",
+		"/C/Users/mark prades/Desktop/sushi/session.js",
+		"/C/Users/mark prades/AppData/Roaming/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
+		"/C/Users/mark prades/AppData/Roaming/Sublime Text 2/Packages/User/LiveReload.sublime-settings",
+		"/C/projects/categories/angularjs/getting-started/js/index.js",
+		"/C/projects/categories/angularjs/getting-started/cakeFile",
+		"/C/projects/categories/angularjs/getting-started/coffee/index.coffee",
+		"/C/projects/categories/angularjs/vendor/bootstrap/img/glyphicons-halflings.png",
+		"/C/projects/categories/angularjs/vendor/angular.js",
+		"/C/projects/categories/spry/getting-started/js/SpryData.mpmedia.extension.js",
+		"/C/projects/categories/spry/getting-started/region.htm",
+		"/C/projects/categories/spry/getting-started/js/SpryData.extension.js",
+		"/C/projects/categories/spry/getting-started/js/region.js",
+		"/C/Users/mark prades/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/projects/categories/spry/vendor/css/bootstrap-responsive.css",
+		"/C/projects/categories/spry/getting-started/js/script.js",
+		"/C/projects/categories/spry/getting-started/js/SpryData.js",
+		"/C/projects/categories/spry/getting-started/data/products.js",
+		"/C/projects/categories/haxe/haxe-js/getting-started/output/script.js",
+		"/C/projects/categories/haxe/haxe-js/getting-started/output/index.htm",
+		"/C/projects/categories/haxe/haxe-js/getting-started/build.hxml",
+		"/C/projects/categories/haxe/haxe-js/getting-started/Console.hx",
+		"/C/projects/categories/haxe/haxe-js/getting-started/Script.hx",
+		"/C/projects/categories/haxe/haxe-js/getting-started/script.hx",
+		"/C/projects/categories/typescript/getting-started/ts/getting-started.ts",
+		"/C/projects/categories/typescript/README.fr.md",
+		"/C/projects/categories/typescript/README.md",
+		"/C/projects/categories/javascript/drawing-tools/index.html",
+		"/C/projects/categories/javascript/drawing-tools/README.md",
+		"/C/projects/categories/javascript/drawing-tools/editor.html",
+		"/C/projects/categories/javascript/drawing-tools/css/editor.css",
+		"/C/projects/categories/javascript/drawing-tools/scss/editor.scss",
+		"/C/Ruby193/bin/sass",
+		"/C/projects/categories/javascript/drawing-tools/img/paint.png",
+		"/C/projects/categories/javascript/drawing-tools/img/paint.jpg",
+		"/C/projects/categories/javascript/coordinates/site/coffee/app/router/MainRouter.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/coordinates.coffee",
+		"/C/projects/categories/javascript/coordinates/site/coffee/main.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/layouts/threedee/Scatter3d.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/links/threedee/DOMLink3d.coffee",
+		"/C/projects/lib/coordy-0.9.9/src/com/somerandomdude/coordy/layouts/threedee/Scatter3d.as",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/layouts/layouts.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/nodes/nodes.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/links/threedee/Link3d.coffee",
+		"/C/projects/categories/javascript/coordinates/tests/tests.coffee",
+		"/C/projects/lib/coordy-0.9.9/src/com/somerandomdude/coordy/nodes/threedee/ScatterNode3d.as",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/nodes/threedee/ScatterNode3d.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/constants/LayoutUpdateMethod.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/nodes/threedee/OrderedNode3d.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/layouts/threedee/Stack3d.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/layouts/twodee/Layout2d.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/layouts/twodee/HorizontalLine.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/layouts/twodee/VerticalLine.coffee",
+		"/C/projects/categories/javascript/coordinates/site/coffee/app/view/MenuStage2d.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/links/DOMLink2d.coffee",
+		"/C/projects/categories/javascript/coordinates/site/index.htm",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/layouts/twodee/Stack.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/layouts/twodee/Wave.coffee",
+		"/C/projects/categories/javascript/coordinates/tests/tests.html",
+		"/C/projects/categories/javascript/coordinates/site/coffee/app.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/layouts/Layout.coffee",
+		"/C/projects/categories/javascript/coordinates/site/twodee.htm",
+		"/C/projects/categories/javascript/coordinates/site/threedee.htm",
+		"/C/projects/categories/javascript/coordinates/site/tweenmax.htm",
+		"/C/projects/categories/javascript/coordinates/site/three.js.htm",
+		"/C/projects/categories/javascript/coordinates/site/coffee/app/collection/LayoutCollectionCollection.coffee",
+		"/C/projects/categories/javascript/coordinates/site/coffee/app/model/LayoutCollectionModel.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/constants/LayoutType.coffee",
+		"/C/projects/categories/javascript/coordinates/site/coffee/app/template/MenuTemplate.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/layouts/threedee/Layout3d.coffee",
+		"/C/projects/lib/coordy-0.9.9/src/com/somerandomdude/coordy/layouts/threedee/Stack3d.as",
+		"/C/projects/lib/coordy-0.9.9/src/com/somerandomdude/coordy/nodes/threedee/OrderedNode3d.as",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/nodes/threedee/Node3d.coffee",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/constants/StackOrder.coffee",
+		"/C/projects/categories/javascript/coordinates/exemples/bezier.html",
+		"/C/projects/categories/javascript/coordinates/exemples/bezier.js",
+		"/C/projects/categories/javascript/coordinates/src/js/coordinates/links/DOMLink2d.js",
+		"/C/projects/categories/javascript/coordinates/exemples/perspective.htm",
+		"/C/projects/categories/javascript/coordinates/src/coffee/coordinates/links/links.coffee",
+		"/C/projects/categories/javascript/coordinates/legacy_code/_haxe/com/somerandomdude/coordy/layouts/threedee/Layout3d.hx",
+		"/C/projects/categories/javascript/coordinates/legacy_code/_haxe/com/somerandomdude/coordy/nodes/threedee/Node3d.hx"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"c:\\projects\\categories\\django",
+			"c:\\Users\\mark prades\\Documents\\www\\projects",
+			"c:\\Users\\mark prades\\Documents\\www\\projects\\mpmedia.alwaysdata.net-silexblog",
+			"c:\\Users\\mark prades\\Documents\\www\\projects\\mongoblog.phpfogapp.com\\app\\view"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<!DOCTYPE HTML>\n<html lang=\"en-US\" ng-app=\"sushi\">\n  <!-- \n  @node @angular\n  The ng-app attribute is represents an Angular directive (named ngApp; Angular uses name-with-dashes for attribute names and camelCase for the corresponding directive name) used to flag an element which Angular should consider to be the root element of our application. This gives application developers the freedom to tell Angular if the entire html page or only a portion of it should be treated as the Angular application\n-->\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Joly Sushi</title>\n  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'> -->\n  <link rel=\"stylesheet\" href=\"css/index.css\">\n  <link rel=\"stylesheet\" href=\"vendor/bootstrap/css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"vendor/bootstrap/css/bootstrap-responsive.min.css\">\n  <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/es5-shim/1.2.4/es5-shim.min.js \"></script>\n  <script type=\"text/javascript\" src='vendor/jquery.min.js'></script>\n  <script type=\"text/javascript\" src=\"vendor/bootstrap/js/bootstrap.min.js\"></script>\n  <script type=\"text/javascript\" src=\"vendor/angular.js\"></script>\n  <script type=\"text/javascript\" src=\"js/filters.js\"></script>\n  <script type=\"text/javascript\" src='js/app.js'></script>\n  <script type=\"text/javascript\" src=\"js/controller.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <!-- header -->\n    <div class=\"row\">\n      <noscript>\n        <div class=\"span12\">Please enable Javascript to use this site.</div>\n      </noscript>\n      <div class='span12' ng-controller=\"ProductCardController\">\n        <div id='info-bar'>\n          <div class='alert alert-{{alert.type}}'>\n          <a class=\"close\" data-dismiss=\"alert\" href=\"#\">&times;</a>\n          <div>{{ alert.message }}</div>\n          </div>\n        </div>\n      </div>\n      <div class=\"span12\">\n        <h1>Joly Sushi <small class=\"serif\">Delicious sushis shiped worldwide.</small></h1>\n        <h4 </h3>\n          <h6>design by M.Paraiso</h6>\n          <h6><small>An angularjs showcase app</small></h6>\n          <h6>project page : <a href=\"https://github.com/Mparaiso/joly-sushi\">https://github.com/Mparaiso/joly-sushi</a> </h6>\n        </div>\n      </div>\n      <!-- end@header -->\n      <!--@note @angular creer une vue -->\n      <div  class=\"row\" ng-controller=\"ProductCardController\">\n        <span class='span9' ng-view>\n        </span>\n        <span class=\"span3\">\n          <h5>Card</h5>\n          <table class='table'>\n            <tr>\n              <th>Article</th>\n              <th>Price</th>\n              <th>Quantity</th>\n            </tr>\n            <tr ng-repeat='cardItem in card'>\n              <td><small>{{getFullName(cardItem.sushi)}}</small></td>\n              <td><small>{{cardItem.sushi.price}} €</small> </td>\n              <td><small><input type=\"text\" class='span1 quantity' ng-model=\"cardItem.quantity\"> </small></td>\n            </tr>\n            <tr>\n              <td>Total</td>\n              <td></td>\n              <td>{{ getTotalPrice() }} €</td>\n            </tr>\n          </table>\n        </span>\n      </div>\n      <div class='row'></div>\n      <small>&copy; 2012 M.Paraiso</small>\n    </div>\n  </body>\n  </html>\n",
+			"<!DOCTYPE HTML>\n<html lang=\"en-US\" ng-app>\n<!-- \n    @node @angular\n    The ng-app attribute is represents an Angular directive (named ngApp; Angular uses name-with-dashes for attribute names and camelCase for the corresponding directive name) used to flag an element which Angular should consider to be the root element of our application. This gives application developers the freedom to tell Angular if the entire html page or only a portion of it should be treated as the Angular application\n-->\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Phone-cat</title>\n    <link rel=\"stylesheet\" href=\"vendor/bootstrap/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" href=\"vendor/bootstrap/css/bootstrap-reponsive.min.css\">\n    <script type=\"text/javascript\" src=\"vendor/angular.js\"></script>\n    <script type=\"text/javascript\" src='js/index.js'></script>\n    <script type=\"text/javascript\" src=\"js/controller.js\"></script>\n</head>\n<body ng-controller=\"ProductListController\">\n    <div class=\"containter container-fluid\">\n        <div class=\"row row-fluid\">\n            <h4>{{sushis.length}} Product(s)</h4>\n              <form class='form-inline' action=\"\">\n                <label for=\"filter\">Filter by name : </label>\n                <input type='text' ng-model=\"query\" name=\"filter\" >\n            </form>\n            <ul class='thumbnails'>\n                <!-- @note @angular filtrer une liste -->\n                <li class='span3' ng-repeat=\"sushi in sushis | filter:query\">\n                    <a href='#' class='thumbnail'>\n                        <img src=\"img/{{sushi.src}}\" alt=\"\">\n                        <h5>{{sushi.type}} {{sushi.name}}</h5>\n                        <p>{{sushi.price}} €</p>\n                    </a>\n                </li>\n            </ul>\n        </div>\n\n    </div>\n</div>\n</body>\n</html>",
+			"icon-c",
+			"icon-",
+			"spry:content",
+			"Console",
+			"click.tab.data-api",
+			"createDom2dLinks",
+			"link",
+			"setCurrentCollection",
+			"menustage",
+			"setCurrentLayout",
+			"layout3d",
+			"layout2d",
+			"link",
+			"^\\s*",
+			";",
+			"String=",
+			"public static inline var",
+			"\\*\\/",
+			"\\/\\*.*((\\n*).*)$",
+			"overflowPolicy",
+			"ALLOW_OVERFLOW",
+			"outsideBounds",
+			"setOutsideBounds",
+			"xPositionsetOutsideBounds",
+			"xPosition",
+			"node.setX",
+			"node.x",
+			"layoutChildrenVertically",
+			"alignColumn",
+			"alignitem",
+			"alignColumn",
+			"horizontalalign",
+			"yPa",
+			"vPadi",
+			"@_width",
+			"width",
+			"variable",
+			"@",
+			"regex",
+			"regexp",
+			"key",
+			"variable",
+			"scope",
+			"this",
+			"_width",
+			"_height",
+			"_rows",
+			"setRow",
+			"setRows",
+			"setRow",
+			"setCol",
+			"tab",
+			"login",
+			"timezone",
+			"time",
+			"created",
+			"route",
+			"templ",
+			"fold",
+			"inlin",
+			"encode",
+			"data",
+			"-mno-cygwin",
+			"                      ",
+			"\\s+$",
+			"visible",
+			"wrap",
+			"static",
+			"python",
+			"root",
+			"static",
+			"models",
+			"auth",
+			"type",
+			"snippetmanager",
+			"k",
+			"template",
+			"category",
+			"\"favorite\":\\s\\S+",
+			"\"created\"",
+			"\"updated\"",
+			"\"user_id\":\\s\\d+\\,",
+			"created",
+			"updated",
+			"category\"",
+			"app",
+			"php",
+			"app",
+			"mod",
+			"model",
+			"spectragram",
+			"APP",
+			"indent",
+			"app",
+			"learningdjango",
+			"staticfiles",
+			"learningdjango",
+			"cache",
+			"id",
+			"console",
+			"console.log",
+			"'}",
+			"url",
+			"controller",
+			"toggle",
+			"\");\n",
+			"portrait",
+			"on_error",
+			"version",
+			"this is my event{} Index",
+			"this is my event{}",
+			"c",
+			"alias",
+			"xmlhttp",
+			"mongo",
+			"throwNotCallbackError",
+			"isFunction",
+			"-values",
+			"hous",
+			"#",
+			"alias",
+			"boostrap",
+			"]]",
+			"[[",
+			"wget",
+			"gem"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"setCurrentLayoutCollection",
+			"",
+			"django_models",
+			"snippets",
+			"",
+			"\"created_at\"",
+			"\"updated_at\"",
+			"\"user_id\": 1,",
+			"created_at",
+			"updated_at",
+			"language\"",
+			"buddy",
+			"spectragram",
+			"a",
+			"xhr",
+			"config.mongo",
+			"_throwNotCallbackError",
+			"_isFunction",
+			"_values",
+			"",
+			"curl -O ",
+			"$this->articleManager",
+			"$this->userManager",
+			"$this->articleManager",
+			"$this->name",
+			"$this->myBase",
+			"=>\n",
+			"->\n",
+			"\">\n",
+			"Z",
+			"Y"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "requirements.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 581.0
+	},
+	"output.exec":
+	{
+		"height": 141.0
+	},
+	"output.git":
+	{
+		"height": 114.0
+	},
+	"output.phpdocumentor":
+	{
+		"height": 102.0
+	},
+	"output.phpunit":
+	{
+		"height": 102.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"sushi",
+				"templates/partials/sushi-list.html"
+			],
+			[
+				"list",
+				"templates/partials/sushi-list.html"
+			],
+			[
+				"data",
+				"data/data.json"
+			],
+			[
+				"productlist",
+				"coffee/controllers/ProductListController.coffee"
+			],
+			[
+				"cakef",
+				"CakeFile"
+			],
+			[
+				"detail",
+				"templates/partials/sushi-detail.html"
+			],
+			[
+				"control",
+				"sushi/coffee/controller.coffee"
+			],
+			[
+				"index",
+				"sushi/index.htm"
+			],
+			[
+				"indx",
+				"sushi/index.htm"
+			],
+			[
+				"in",
+				"getting-started/index.html"
+			],
+			[
+				"index.css",
+				"sushi/css/index.css"
+			],
+			[
+				"index.c",
+				"sushi/css/index.css"
+			],
+			[
+				"deta",
+				"sushi/templates/partials/sushi-detail.html"
+			],
+			[
+				"test",
+				"sushi/test/tests.js"
+			],
+			[
+				"contro",
+				"sushi/coffee/controller.coffee"
+			],
+			[
+				"",
+				"getting-started/region.htm"
+			],
+			[
+				"reg",
+				"getting-started/js/region.js"
+			],
+			[
+				"sc",
+				"getting-started/js/script.js"
+			],
+			[
+				"main",
+				"site/coffee/main.coffee"
+			],
+			[
+				"domli",
+				"src/coffee/coordinates/links/threedee/DOMLink3d.coffee"
+			],
+			[
+				"index.",
+				"site/index.htm"
+			],
+			[
+				"domlink",
+				"src/coffee/coordinates/links/threedee/DOMLink3d.coffee"
+			],
+			[
+				"mainrou",
+				"site/coffee/app/router/MainRouter.coffee"
+			],
+			[
+				"coordin",
+				"src/coffee/coordinates/coordinates.coffee"
+			],
+			[
+				"scatter3d",
+				"src/coffee/coordinates/layouts/threedee/Scatter3d.coffee"
+			],
+			[
+				"tests",
+				"tests/tests.coffee"
+			],
+			[
+				"hori",
+				"src/coffee/coordinates/layouts/twodee/HorizontalLine.coffee"
+			],
+			[
+				"vertical",
+				"src/coffee/coordinates/layouts/twodee/VerticalLine.coffee"
+			],
+			[
+				"stack.c",
+				"src/coffee/coordinates/layouts/twodee/Stack.coffee"
+			],
+			[
+				"stack3d",
+				"src/coffee/coordinates/layouts/threedee/Stack3d.coffee"
+			],
+			[
+				"layout.co",
+				"src/coffee/coordinates/layouts/Layout.coffee"
+			],
+			[
+				"layout2d",
+				"src/coffee/coordinates/layouts/twodee/Layout2d.coffee"
+			],
+			[
+				"wave.co",
+				"src/coffee/coordinates/layouts/twodee/Wave.coffee"
+			],
+			[
+				"domlin",
+				"src/coffee/coordinates/links/DOMLink2d.coffee"
+			],
+			[
+				"domlink3d",
+				"src/coffee/coordinates/links/threedee/DOMLink3d.coffee"
+			],
+			[
+				"coordinates",
+				"src/coffee/coordinates/coordinates.coffee"
+			],
+			[
+				"menust",
+				"site/coffee/app/view/MenuStage2d.coffee"
+			],
+			[
+				"menu",
+				"site/coffee/app/view/MenuStage2d.coffee"
+			],
+			[
+				"layout3d",
+				"src/coffee/coordinates/layouts/threedee/Layout3d.coffee"
+			],
+			[
+				"layoutty",
+				"src/coffee/coordinates/constants/LayoutType.coffee"
+			],
+			[
+				"menustage2d",
+				"site/coffee/app/view/MenuStage2d.coffee"
+			],
+			[
+				"stack3d.co",
+				"src/coffee/coordinates/layouts/threedee/Stack3d.coffee"
+			],
+			[
+				"layout.c",
+				"src/coffee/coordinates/layouts/Layout.coffee"
+			],
+			[
+				"layouts.co",
+				"src/coffee/coordinates/layouts/layouts.coffee"
+			],
+			[
+				"coo",
+				"src/coffee/coordinates/coordinates.coffee"
+			],
+			[
+				"nodes",
+				"src/coffee/coordinates/nodes/nodes.coffee"
+			],
+			[
+				"node3",
+				"src/coffee/coordinates/nodes/threedee/Node3d.coffee"
+			],
+			[
+				"layouts",
+				"src/coffee/coordinates/layouts/layouts.coffee"
+			],
+			[
+				"link2d",
+				"src/coffee/coordinates/links/DOMLink2d.coffee"
+			],
+			[
+				"link3d",
+				"src/coffee/coordinates/links/threedee/DOMLink3d.coffee"
+			],
+			[
+				"links",
+				"src/coffee/coordinates/links/links.coffee"
+			],
+			[
+				"la3d",
+				"src/coffee/coordinates/layouts/threedee/Layout3d.coffee"
+			],
+			[
+				"coord",
+				"src/coffee/coordinates/coordinates.coffee"
+			],
+			[
+				"layoutfa",
+				"legacy_code/_haxe/examples/LayoutFactory.hx"
+			],
+			[
+				"co",
+				"src/coffee/coordinates/coordinates.coffee"
+			],
+			[
+				"node3d",
+				"legacy_code/_haxe/com/somerandomdude/coordy/nodes/threedee/Node3d.hx"
+			],
+			[
+				"link",
+				"src/coffee/coordinates/links/Link.coffee"
+			],
+			[
+				"node",
+				"src/coffee/coordinates/nodes/Node.coffee"
+			],
+			[
+				"wave",
+				"src/coffee/coordinates/layouts/twodee/Wave.coffee"
+			],
+			[
+				"grid",
+				"src/coffee/coordinates/layouts/twodee/Grid.coffee"
+			],
+			[
+				"spiral",
+				"src/coffee/coordinates/layouts/twodee/Spiral.coffee"
+			],
+			[
+				"ell",
+				"src/coffee/coordinates/layouts/twodee/Ellipse.coffee"
+			],
+			[
+				"doml",
+				"src/coffee/coordinates/links/DOMLink2d.coffee"
+			],
+			[
+				"dom",
+				"exemples/twodee/dom.js"
+			],
+			[
+				"flow.",
+				"legacy_code/_haxe/com/somerandomdude/coordy/layouts/twodee/Flow.hx"
+			],
+			[
+				"flow.c",
+				"src/coffee/coordinates/layouts/twodee/Flow.coffee"
+			],
+			[
+				"coor",
+				"src/coffee/coordinates/coordinates.coffee"
+			],
+			[
+				"latt",
+				"src/coffee/coordinates/layouts/twodee/Lattice.coffee"
+			],
+			[
+				"scr",
+				"exemples/twodee/script.js"
+			],
+			[
+				"tes",
+				"tests/tests.coffee"
+			],
+			[
+				"la",
+				"src/coffee/coordinates/constants/LatticeAlternationPattern.coffee"
+			],
+			[
+				"const",
+				"src/coffee/coordinates/constants/constants.coffee"
+			],
+			[
+				"buddy/ur",
+				"buddy/urls.py"
+			],
+			[
+				"users/u",
+				"users/urls.py"
+			],
+			[
+				"lay",
+				"buddy/templates/layout.html"
+			],
+			[
+				"sni",
+				"snippets/templates/snippets/snippet_search.html"
+			],
+			[
+				"search",
+				"snippets/templates/snippets/snippet_search.html"
+			],
+			[
+				"layou",
+				"buddy/templates/layout.html"
+			],
+			[
+				"layout",
+				"buddy/templates/layout.html"
+			],
+			[
+				"snipp",
+				"snippets/templates/snippets/snippet_list.html"
+			],
+			[
+				"snippet",
+				"facebooktab/templates/snippet_list.html"
+			],
+			[
+				"views",
+				"snippets/views.py"
+			],
+			[
+				"urls",
+				"snippets/urls.py"
+			],
+			[
+				"snippet/urls",
+				"snippets/urls.py"
+			],
+			[
+				"snili",
+				"snippets/templates/snippets/snippet_list.html"
+			],
+			[
+				"snippet_de",
+				"snippets/templates/snippets/snippet_detail.html"
+			],
+			[
+				"sett",
+				"buddy/settings.py"
+			],
+			[
+				"boot",
+				"buddy/static/vendor/bootstrap/css/bootstrap.css"
+			],
+			[
+				"snippet_",
+				"snippets/templates/snippets/snippet_detail.html"
+			],
+			[
+				"snippet_list",
+				"snippets/templates/snippets/snippet_list.html"
+			],
+			[
+				"snippet_li",
+				"facebooktab/templates/snippet_list.html"
+			],
+			[
+				"boots",
+				"buddy/static/vendor/bootstrap/css/bootstrap.css"
+			],
+			[
+				"vie",
+				"buddy/views.py"
+			],
+			[
+				"ur",
+				"poll/urls.py"
+			],
+			[
+				"url",
+				"poll/urls.py"
+			],
+			[
+				"ad",
+				"poll/admin.py"
+			],
+			[
+				"dta",
+				"poll/templates/detail.html"
+			],
+			[
+				"det",
+				"poll/templates/detail.html"
+			],
+			[
+				"resu",
+				"poll/templates/results.html"
+			],
+			[
+				"ind",
+				"poll/templates/index.html"
+			],
+			[
+				"detai",
+				"poll/templates/detail.html"
+			],
+			[
+				"dea",
+				"poll/templates/detail.html"
+			],
+			[
+				"models",
+				"poll/models.py"
+			],
+			[
+				"m",
+				"poll/models.py"
+			],
+			[
+				"model",
+				"poll/models.py"
+			],
+			[
+				"her",
+				"HEROKU-FAQ.md"
+			],
+			[
+				"se",
+				"poll/settings.py"
+			],
+			[
+				"layo",
+				"poll/templates/layout.html"
+			],
+			[
+				"inde",
+				"poll/templates/index.html"
+			],
+			[
+				"web",
+				"webservice/urls.py"
+			],
+			[
+				"vies",
+				"facebooktab/views.py"
+			],
+			[
+				"setting",
+				"buddy/settings.py"
+			],
+			[
+				"lan",
+				"snippets/templates/snippets/language_detail.html"
+			],
+			[
+				"lang",
+				"snippets/templates/snippets/language_list.html"
+			],
+			[
+				"l",
+				"buddy/templates/layout.html"
+			],
+			[
+				"rls",
+				"buddy/urls.py"
+			],
+			[
+				"forms",
+				"users/forms.py"
+			],
+			[
+				"login",
+				"users/templates/login.html"
+			],
+			[
+				"register",
+				"users/templates/register.html"
+			],
+			[
+				"log",
+				"users/templates/login.html"
+			],
+			[
+				"regi",
+				"users/templates/register.html"
+			],
+			[
+				"regis",
+				"users/templates/register.html"
+			],
+			[
+				"form",
+				"users/forms.py"
+			],
+			[
+				"mod",
+				"users/models.py"
+			],
+			[
+				"sign",
+				"users/templates/signup.html"
+			],
+			[
+				"si",
+				"users/templates/signup.html"
+			],
+			[
+				"sig",
+				"users/templates/signup.html"
+			],
+			[
+				"style",
+				"snippetmanager/snippetmanager/static/css/style.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true
+}
