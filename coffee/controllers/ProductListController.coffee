@@ -5,7 +5,11 @@ ProductListController = ($scope,$rootScope,$http,$filter)->
     ###
     $rootScope.title = "Joly Sushi"
     $scope.orderProp = 'type'
-    $rootScope.types = []
+    $rootScope.types= []
+    
+    $http.get("data/types.json").success((data)->
+        $rootScope.types = data;
+    )
 
     getSelectedTypes = ->
         return $rootScope.types.filter((type)->type.selected == true).map((type)->type.name)

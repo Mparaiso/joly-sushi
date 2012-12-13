@@ -12,10 +12,6 @@ ProductCardController = function($scope, $rootScope, $routeParams, $http) {
           FR : gère la commande du client
   */
 
-  /*
-          EN : initialize sushis model
-  */
-
   var _addToCard, _removeFromCard;
   $http.get('data/data.json').success(function(data) {
     return $rootScope.sushis = data;
@@ -165,6 +161,9 @@ ProductListController = function($scope, $rootScope, $http, $filter) {
   $rootScope.title = "Joly Sushi";
   $scope.orderProp = 'type';
   $rootScope.types = [];
+  $http.get("data/types.json").success(function(data) {
+    return $rootScope.types = data;
+  });
   getSelectedTypes = function() {
     return $rootScope.types.filter(function(type) {
       return type.selected === true;
@@ -187,9 +186,6 @@ ProductListController = function($scope, $rootScope, $http, $filter) {
 };
 
 ProductTypeController = function($scope, $rootScope, $http) {
-  $http.get("data/types.json").success(function(data) {
-    return $rootScope.types = data;
-  });
   $scope.getSelectedClass = function(predicate) {
     if (predicate === true) {
       return "label-info";

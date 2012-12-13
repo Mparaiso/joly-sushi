@@ -7,10 +7,6 @@ ProductCardController = ($scope,$rootScope,$routeParams,$http)->
         EN : manage customer card
         FR : gère la commande du client
     ###
-
-    ###
-        EN : initialize sushis model
-    ###
     $http.get('data/data.json').success((data)->
         $rootScope.sushis = data
     )

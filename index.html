@@ -2,6 +2,7 @@
 <html lang="en-US" ng-app="sushi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joly Sushi</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -20,7 +21,7 @@
   </noscript>
   <div class="span12" ng-include="'templates/partials/sushi-header.html'"></div>
 </div>
-<div  class="row" ng-controller="ProductCardController">
+<div  class="row trans" ng-controller="ProductCardController">
         <!-- @note @angular inclure un fichier extern -->
     <span class="span3 pull-right" ng-include="'templates/partials/sushi-card.html'"></span>
     <span class='span9' ng-view></span>

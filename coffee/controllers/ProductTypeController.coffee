@@ -1,8 +1,5 @@
 ProductTypeController = ($scope,$rootScope,$http)->
 
-    $http.get("data/types.json").success((data)->
-        $rootScope.types = data;
-    )
 
     $scope.getSelectedClass = (predicate)->
         if predicate == true
